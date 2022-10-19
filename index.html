@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Calc</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row cal justify-content-center align-items-center">
+            <div class="col-6 pt-3 bg-light rounded">
+                <h4 class="text-center">Calculator</h4>
+                <div class="mb-3">
+                    <input type="text" id="text" value="" class="form-control">
+                </div>
+                <div class="row fs-4">
+                    <div id="clear" class="col-8 c-btn text-center fw-bold bg-primary text-light border">
+                        AC
+                    </div>
+                    <div id="del" class="col-4 c-btn text-center fw-bold bg-secondary text-light border">
+                        DEL
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(1)">
+                        1
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(2)">
+                        2
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(3)">
+                        3
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get('+')">
+                        +
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(4)">
+                        4
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(5)">
+                        5
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(6)">
+                        6
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get('-')">
+                        -
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(7)">
+                        7
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(8)">
+                        8
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(9)">
+                        9
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get('*')">
+                        *
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 c-btn border text-center py-2" onclick="get(0)">
+                        0
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get('.')">
+                        .
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" onclick="get('/')">
+                        /
+                    </div>
+                    <div class="col-3 c-btn border text-center py-2" id="eval">
+                        =
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

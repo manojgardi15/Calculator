@@ -1,0 +1,14 @@
+/*https://source.unsplash.com/h3kuhYUCE9A*/
+html,body{
+    background-image: url(img/calculatorbg.jpg);
+    height:100vh !important;
+}
+.cal{
+    height: 100vh !important;
+}
+.c-btn{
+    cursor: pointer;
+}
+.c-btn:hover{
+    background-color: rgb(130, 125, 125);
+}
